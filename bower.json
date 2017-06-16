@@ -1,0 +1,21 @@
+{
+  "name": "test-polymer",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Karim <kabdeselam@synergicpartners.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "google-chart": "^1.1.2",
+    "google-youtube": "GoogleWebComponents/google-youtube#^1.3.0"
+  }
+}

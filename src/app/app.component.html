@@ -1,3 +1,28 @@
 <h1>
   {{title}}
 </h1>
+
+<label>
+    <input type="number" [(ngModel)]="january">
+<label>
+
+<google-chart
+  type='pie'
+  options='{"title": "Distribution of days in 2001Q1"}'
+  cols='[{"label":"Month", "type":"string"}, {"label":"Days", "type":"number"}]'
+  [rows]='[["Jan", january],["Feb", 28],["Mar", 31]]'>
+</google-chart>
+
+<button (click)="play()">Play</button>
+<button (click)="pause()">Pause</button>
+
+<google-youtube
+  video-id="JiaTyt4EnGY"
+  height="270px"
+  width="480px"
+  rel="0"
+  start="5"
+  autoplay="1"
+  (currenttime-changed)="youtubeReady($event)"
+  #youtube>
+</google-youtube>
